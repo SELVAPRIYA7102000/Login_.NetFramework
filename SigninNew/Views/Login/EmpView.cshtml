@@ -1,0 +1,39 @@
+﻿@model SigninNew.Models.Teacher
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <p><h1>Teachers List</h1></p>
+
+   
+    <table style="width:70%">
+        <tr>
+            
+            <th><center>Teacher Id </center></th>
+            <th> <center>Code</center></th>
+            <th><center>Name</center></th>
+        </tr>
+        @foreach (var teach in ViewBag.no1)
+        {
+            <tr>
+                <td><center>@teach.TeacherId</center></td>
+                <td><center>@teach.Code</center></td>
+                <td><center>@teach.Name</center></td>
+            </tr>
+           
+        }
+    </table>
+    </body>
+</html>

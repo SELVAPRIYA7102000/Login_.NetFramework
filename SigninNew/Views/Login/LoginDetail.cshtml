@@ -1,0 +1,19 @@
+﻿@model SigninNew.Models.Class1
+
+@{
+    Layout = null;
+    ViewBag.Title = "Userlogin";
+}
+@using (Html.BeginForm("Success", "Login", FormMethod.Post))
+{
+    <h1>Welcome to login page</h1>
+    <label>UserName</label>
+    @Html.TextBoxFor(x => x.Name)
+    <br />
+    <label>Password</label>
+    @Html.TextBoxFor(x => x.Password)
+    <br />
+    <button>submit</button>
+}
+
+
